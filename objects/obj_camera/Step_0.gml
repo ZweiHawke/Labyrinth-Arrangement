@@ -6,6 +6,6 @@ if (instance_exists(obj_player)) {
 	targetPointY = obj_player.y+16;
 }
 
-x = targetPointX;
-y = targetPointY;
+x = lerp(x,targetPointX,0.5*global.delta);
+y = lerp(y,targetPointY,0.5*global.delta);
 #endregion
