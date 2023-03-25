@@ -21,6 +21,7 @@
     {"name":"Walls","order":8,"path":"folders/Sprites/Walls.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Debug","order":5,"path":"folders/Objects/Debug.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_spike_outline","order":3,"path":"sprites/spr_spike_outline/spr_spike_outline.yy",},
@@ -28,8 +29,8 @@
     {"name":"obj_player","order":2,"path":"objects/obj_player/obj_player.yy",},
     {"name":"spr_spike","order":2,"path":"sprites/spr_spike/spr_spike.yy",},
     {"name":"spr_wall_outline","order":4,"path":"sprites/spr_wall_outline/spr_wall_outline.yy",},
-    {"name":"obj_boundary","order":4,"path":"objects/obj_boundary/obj_boundary.yy",},
-    {"name":"obj_camera","order":3,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"obj_boundary","order":2,"path":"objects/obj_boundary/obj_boundary.yy",},
+    {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"spr_camera","order":1,"path":"sprites/spr_camera/spr_camera.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"font_ibm_24","order":1,"path":"fonts/font_ibm_24/font_ibm_24.yy",},

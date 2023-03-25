@@ -1,8 +1,9 @@
 /// @description Init Vars
 
-#region framerate
+#region essentials
 global.delta = delta_time/1000000;
 scale=60;
+#macro gridSize 32;
 #endregion
 
 #region Pausing
