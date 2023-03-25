@@ -25,7 +25,8 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_spike_outline","order":3,"path":"sprites/spr_spike_outline/spr_spike_outline.yy",},
-    {"name":"obj_flipSpikes","order":3,"path":"objects/obj_flipSpikes/obj_flipSpikes.yy",},
+    {"name":"obj_flipSpike","order":3,"path":"objects/obj_flipSpike/obj_flipSpike.yy",},
+    {"name":"spr_redo","order":2,"path":"sprites/spr_redo/spr_redo.yy",},
     {"name":"spr_key","order":1,"path":"sprites/spr_key/spr_key.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"spr_spike","order":2,"path":"sprites/spr_spike/spr_spike.yy",},
@@ -36,7 +37,9 @@
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"obj_spike","order":4,"path":"objects/obj_spike/obj_spike.yy",},
     {"name":"font_ibm_24","order":1,"path":"fonts/font_ibm_24/font_ibm_24.yy",},
+    {"name":"obj_pickup","order":3,"path":"objects/obj_pickup/obj_pickup.yy",},
     {"name":"spr_blank","order":2,"path":"sprites/spr_blank/spr_blank.yy",},
+    {"name":"obj_flipWall","order":5,"path":"objects/obj_flipWall/obj_flipWall.yy",},
     {"name":"font_ibm_12","order":2,"path":"fonts/font_ibm_12/font_ibm_12.yy",},
   ],
 }

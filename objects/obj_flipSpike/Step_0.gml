@@ -7,10 +7,15 @@ switch (obj_manager.currentStep) {
 	break;
 	// Process Events Before the Players Input
 	case turnStep.beforeStep: {
-		if (state) {
-			state = false;
-		} else {
-			state = true;	
+		cool -= 1;
+		if (cool <= 0) {
+			if (state) {
+				state = false;
+				cool = cooldowns[0];
+			} else {
+				state = true;
+				cool = cooldowns[1];
+			}
 		}
 		obj_manager.beforeActions -= 1;
 	}
