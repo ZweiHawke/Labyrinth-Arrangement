@@ -1,1 +1,1 @@
-# Labyrinth Arrnagement
+# Labyrinth Arrangement
