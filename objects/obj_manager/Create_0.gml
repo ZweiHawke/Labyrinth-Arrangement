@@ -27,3 +27,15 @@ enum turnStep {
 }
 currentStep = turnStep.playerTurn;
 #endregion
+
+#region Pallete
+/*
+PALLETE - 
+	0 - Player and Checkpoints
+	1 - Static Objects
+*/
+colorSet = [
+	make_color_rgb(0,0,200),
+	make_color_rgb(128,128,128)
+];
+#endregion
