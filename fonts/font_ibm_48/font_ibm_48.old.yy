@@ -1,7 +1,7 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "font_ibm_120",
+  "name": "font_ibm_48",
   "AntiAlias": 0,
   "applyKerning": 0,
   "ascender": 115,

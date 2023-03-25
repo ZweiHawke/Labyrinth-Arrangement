@@ -1,6 +1,6 @@
 /// @description Init Vars
 
-#region essentials
+#region Essentials
 global.delta = delta_time/1000000;
 scale=60;
 #macro gridSize 32;
@@ -27,6 +27,9 @@ enum turnStep {
 	cleanupStep
 }
 currentStep = turnStep.playerTurn;
+beforeActions = 0;
+inputActions = 0;
+afterActions = 0;
 #endregion
 
 #region Pallete
@@ -51,4 +54,10 @@ colorSet = [
 	make_color_rgb(200,200,0),
 	make_color_rgb(255,255,255)
 ];
+#endregion
+
+#region	Level
+levelName = "Minos's Ballbuster"
+diamonds = 0;
+diamondsMax = 7;
 #endregion

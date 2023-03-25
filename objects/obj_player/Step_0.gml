@@ -18,7 +18,7 @@ switch (obj_manager.currentStep) {
 	break;
 	// Process Events Before the Players Input
 	case turnStep.beforeStep: {
-		obj_manager.currentStep = turnStep.inputStep;
+		//obj_manager.currentStep = turnStep.inputStep;
 	}
 	break;
 	// Process The Players Input
@@ -26,20 +26,20 @@ switch (obj_manager.currentStep) {
 		if (!instance_place(x+(xPos),y+(yPos),obj_wall)) {
 			x += xPos;
 			y += yPos;
-			obj_manager.currentStep = turnStep.afterStep;
+			//obj_manager.currentStep = turnStep.afterStep;
 		}
 	}
 	break;
 	// Process Events After the Players Input
 	case turnStep.afterStep: {
-		obj_manager.currentStep = turnStep.cleanupStep;
+		//obj_manager.currentStep = turnStep.cleanupStep;
 	}
 	break;
 	// Clean up and Reset for the next Turn
 	case turnStep.cleanupStep: {
 		xPos = 0;
 		yPos = 0;
-		obj_manager.currentStep = turnStep.playerTurn;
+		//obj_manager.currentStep = turnStep.playerTurn;
 	}
 	break;
 }

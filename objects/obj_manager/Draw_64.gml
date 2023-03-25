@@ -22,3 +22,14 @@ if (debug_mode) {
 }
 
 #endregion
+
+#region HUD
+
+//Initialize Style Sheet
+draw_set_font(font_ibm_48);
+draw_text_ext_transformed_color(16,window_get_height()-64,levelName,0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(font_ibm_24);
+draw_text_ext_transformed_color(16,window_get_height()-64-32,"HELLO",0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
+
+
+#endregion
