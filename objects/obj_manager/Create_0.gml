@@ -33,9 +33,21 @@ currentStep = turnStep.playerTurn;
 PALLETE - 
 	0 - Player and Checkpoints
 	1 - Static Objects
+	2 - Flip Spikes
+	3 - Flip Walls
+	4 - Moving Spikes/Walls
+	5 - Switch Blocks
+	6 - Locks and Keys
+	7 - Diamonds
 */
 colorSet = [
 	make_color_rgb(0,0,200),
-	make_color_rgb(128,128,128)
+	make_color_rgb(128,128,128),
+	make_color_rgb(200,0,0),
+	make_color_rgb(0,200,0),
+	make_color_rgb(200,128,0),
+	make_color_rgb(128,0,200),
+	make_color_rgb(200,200,0),
+	make_color_rgb(255,255,255)
 ];
 #endregion
