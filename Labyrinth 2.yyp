@@ -42,6 +42,7 @@
   },
   "resources": [
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
+    {"id":{"name":"spr_void","path":"sprites/spr_void/spr_void.yy",},},
     {"id":{"name":"spr_spike_outline","path":"sprites/spr_spike_outline/spr_spike_outline.yy",},},
     {"id":{"name":"spr_diamond","path":"sprites/spr_diamond/spr_diamond.yy",},},
     {"id":{"name":"spr_lock","path":"sprites/spr_lock/spr_lock.yy",},},
@@ -58,6 +59,7 @@
     {"id":{"name":"spr_computer","path":"sprites/spr_computer/spr_computer.yy",},},
     {"id":{"name":"spr_camera","path":"sprites/spr_camera/spr_camera.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
+    {"id":{"name":"obj_flipWall","path":"objects/obj_flipWall/obj_flipWall.yy",},},
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},},
     {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},},
     {"id":{"name":"spr_switch","path":"sprites/spr_switch/spr_switch.yy",},},

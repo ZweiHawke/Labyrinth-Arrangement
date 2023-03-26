@@ -1,4 +1,5 @@
 /// @description Process Turns
+
 switch (obj_manager.currentStep) {
 	// Take Player Input
 	case turnStep.playerTurn: {
@@ -8,15 +9,6 @@ switch (obj_manager.currentStep) {
 	// Process Events Before the Players Input
 	case turnStep.beforeStep: {
 		cool -= 1;
-		if (cool <= 0) {
-			if (state) {
-				state = false;
-				cool = cooldowns[0];
-			} else {
-				state = true;
-				cool = cooldowns[1];
-			}
-		}
 		obj_manager.beforeActions -= 1;
 	}
 	break;
@@ -36,4 +28,16 @@ switch (obj_manager.currentStep) {
 		}
 	}
 	break;
+}
+
+if (cool <= 0) {
+	if (state) {
+		state = false;
+		cool = cooldowns[0];
+		//mask_index = spr_blank;
+	} else {
+		state = true;
+		cool = cooldowns[1];
+		//mask_index = spr_void;
+	}
 }

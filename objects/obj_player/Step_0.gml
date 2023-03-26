@@ -27,6 +27,10 @@ switch (obj_manager.currentStep) {
 			x += xPos;
 			y += yPos;
 			//obj_manager.currentStep = turnStep.afterStep;
+		} else if (!instance_place(x+(xPos),y+(yPos),obj_flipWall)) {
+			x += xPos;
+			y += yPos;
+			//obj_manager.currentStep = turnStep.afterStep;
 		}
 	}
 	break;
