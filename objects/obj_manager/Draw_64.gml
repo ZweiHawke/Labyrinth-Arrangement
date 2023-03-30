@@ -30,9 +30,8 @@ if (debug_mode) {
 
 //Initialize Style Sheet
 draw_set_font(font_ibm_48);
-draw_text_ext_transformed_color(16,window_get_height()-64-(32*0),levelName,0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_ext_transformed_color(16,window_get_height()-72-(32*0),levelName,0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
 draw_set_font(font_ibm_24);
-draw_text_ext_transformed_color(16,window_get_height()-64-(32*1),"HELLO",0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
-
+draw_text_ext_transformed_color(16,window_get_height()-64-(32*1),string(diamonds)+" / "+string(diamondsMax)+" Diamonds",0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
 
 #endregion

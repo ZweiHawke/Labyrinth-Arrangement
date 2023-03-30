@@ -57,7 +57,7 @@ colorSet = [
 #endregion
 
 #region	Level
-levelName = "Minos's Ballbuster"
+levelName = "Entryway"
 diamonds = 0;
 diamondsMax = 7;
 #endregion

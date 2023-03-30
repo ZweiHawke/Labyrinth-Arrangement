@@ -34,10 +34,10 @@ if (cool <= 0) {
 	if (state) {
 		state = false;
 		cool = cooldowns[0];
-		//mask_index = spr_blank;
+		mask_index = spr_blank;
 	} else {
 		state = true;
 		cool = cooldowns[1];
-		//mask_index = spr_void;
+		mask_index = spr_void;
 	}
 }
