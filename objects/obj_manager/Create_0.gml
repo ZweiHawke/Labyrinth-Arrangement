@@ -4,6 +4,7 @@
 global.delta = delta_time/1000000;
 scale=60;
 #macro gridSize 32;
+global.prt_System = part_system_create_layer("Particles", false);
 #endregion
 
 #region Pausing
