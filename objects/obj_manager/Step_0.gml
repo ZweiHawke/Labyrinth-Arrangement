@@ -1,6 +1,13 @@
 /// @description Game Management
 global.delta = delta_time/1000000*scale;
 
+if (prtUpdate >= 1) {
+	part_system_update(global.prt_System);
+	prtUpdate = 0;
+} else {
+	prtUpdate += 1*global.delta;
+}
+
 #region Steps
 switch (obj_manager.currentStep) {
 	// Take Player Input

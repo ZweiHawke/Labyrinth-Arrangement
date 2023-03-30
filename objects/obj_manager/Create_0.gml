@@ -5,6 +5,8 @@ global.delta = delta_time/1000000;
 scale=60;
 #macro gridSize 32;
 global.prt_System = part_system_create_layer("Particles", false);
+part_system_automatic_update(global.prt_System, false);
+prtUpdate = 0;
 #endregion
 
 #region Pausing
@@ -57,8 +59,13 @@ colorSet = [
 ];
 #endregion
 
+#region Particles
+
+#endregion
+
 #region	Level
 levelName = "Entryway"
 diamonds = 0;
 diamondsMax = 7;
 #endregion
+
