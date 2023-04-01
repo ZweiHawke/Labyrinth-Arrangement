@@ -24,6 +24,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_particle","order":5,"path":"sprites/spr_particle/spr_particle.yy",},
     {"name":"spr_void","order":3,"path":"sprites/spr_void/spr_void.yy",},
     {"name":"spr_spike_outline","order":3,"path":"sprites/spr_spike_outline/spr_spike_outline.yy",},
     {"name":"spr_hazard","order":4,"path":"sprites/spr_hazard/spr_hazard.yy",},

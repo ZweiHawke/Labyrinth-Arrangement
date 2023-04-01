@@ -67,5 +67,7 @@ colorSet = [
 levelName = "Entryway"
 diamonds = 0;
 diamondsMax = 7;
+
+resetPoint = [0,0]
 #endregion
 

@@ -36,12 +36,15 @@
   ],
   "IncludedFiles": [],
   "isEcma": false,
-  "LibraryEmitters": [],
+  "LibraryEmitters": [
+    {"name":"Lab_Hazard","path":"particlelib/Lab_Hazard/Lab_Hazard.yy",},
+  ],
   "MetaData": {
     "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
+    {"id":{"name":"spr_particle","path":"sprites/spr_particle/spr_particle.yy",},},
     {"id":{"name":"spr_void","path":"sprites/spr_void/spr_void.yy",},},
     {"id":{"name":"spr_spike_outline","path":"sprites/spr_spike_outline/spr_spike_outline.yy",},},
     {"id":{"name":"spr_diamond","path":"sprites/spr_diamond/spr_diamond.yy",},},
