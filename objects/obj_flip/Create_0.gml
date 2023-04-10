@@ -1,6 +1,7 @@
 /// @description Init Var
 color = obj_manager.colorSet[2];
-state = false;
+defState = false;
+state = defState;
 cool = 1;
 cooldowns = [1,1];
 cleanup = false;

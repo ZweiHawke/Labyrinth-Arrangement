@@ -11,6 +11,10 @@ if (prtUpdate >= 1) {
 if (resetEnabled && !instance_exists(obj_player)) {
 	if (resetDelay >= 1) {
 		resetDelay = 0;
+		with(obj_flip) {
+			state = defState
+			part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 5);
+		}
 		instance_create_layer(resetPoint[0],resetPoint[1],"Objects",obj_player);
 	} else {
 		resetDelay += 0.01*global.delta;	
