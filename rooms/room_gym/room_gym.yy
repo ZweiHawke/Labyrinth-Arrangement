@@ -251,6 +251,7 @@
     {"name":"inst_6EA232AD","path":"rooms/room_gym/room_gym.yy",},
     {"name":"inst_80AD8F1","path":"rooms/room_gym/room_gym.yy",},
     {"name":"inst_54ECB1D6","path":"rooms/room_gym/room_gym.yy",},
+    {"name":"inst_D8B5F2C","path":"rooms/room_gym/room_gym.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -303,6 +304,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6EA232AD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_flipSpike","path":"objects/obj_flipSpike/obj_flipSpike.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1888.0,"y":864.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_80AD8F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":864.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_54ECB1D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1824.0,"y":864.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D8B5F2C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_diamond","path":"objects/obj_diamond/obj_diamond.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":544.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Boundaries","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BDFE101","colour":4278190080,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},"properties":[],"rotation":0.0,"scaleX":80.0,"scaleY":16.0,"x":0.0,"y":0.0,},

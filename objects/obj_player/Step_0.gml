@@ -34,7 +34,13 @@ var _pass = keyboard_check_pressed(vk_space);
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);
 				}
 			} else if (_pass) {
-				obj_manager.currentStep = turnStep.beforeStep;
+				if (instance_place(x,y,obj_flipWall)) {
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);	
+				} else {
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 50);
+					obj_manager.currentStep = turnStep.beforeStep;
+				}
 			}
 			
 		for (i = 0; i < array_length(spikes); i++) {
@@ -49,8 +55,10 @@ var _pass = keyboard_check_pressed(vk_space);
 		
 		if(instance_place(x,y,obj_pickup)) {
 			var _obj = instance_place(x,y,obj_pickup);
-			part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 500);
-			instance_destroy(_obj);
+			if (!_obj.collect) {
+				part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 500);
+			}
+			_obj.collect = true;
 		}
 		
 		}
@@ -99,6 +107,7 @@ var _pass = keyboard_check_pressed(vk_space);
 		case turnStep.cleanupStep: {
 			xPos = 0;
 			yPos = 0;
+			turnPass = false;
 			//obj_manager.currentStep = turnStep.playerTurn;
 		}
 		break;

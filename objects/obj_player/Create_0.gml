@@ -2,6 +2,7 @@
 
 #region Variables
 color = obj_manager.colorSet[0];
+turnPass = false;
 xPos = 0;
 yPos = 0;
 walls = [obj_wall,obj_flipWall];
