@@ -33,14 +33,18 @@ var _pass = keyboard_check_pressed(vk_space);
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);
 				}
-			} else if (_pass) {
+			} else if (_pass && obj_manager.pass > 0) {
 				if (instance_place(x,y,obj_flipWall)) {
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);	
 				} else {
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 50);
 					obj_manager.currentStep = turnStep.beforeStep;
+					obj_manager.pass -= 1;
 				}
+			} else if (_pass) {
+				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
+				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);	
 			}
 			
 		for (i = 0; i < array_length(spikes); i++) {

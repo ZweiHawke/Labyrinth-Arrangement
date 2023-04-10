@@ -58,6 +58,7 @@
     {"id":{"name":"spr_spike","path":"sprites/spr_spike/spr_spike.yy",},},
     {"id":{"name":"obj_diamond","path":"objects/obj_diamond/obj_diamond.yy",},},
     {"id":{"name":"spr_wall_outline","path":"sprites/spr_wall_outline/spr_wall_outline.yy",},},
+    {"id":{"name":"obj_turnPass","path":"objects/obj_turnPass/obj_turnPass.yy",},},
     {"id":{"name":"prt_lock_open","path":"particles/prt_lock_open/prt_lock_open.yy",},},
     {"id":{"name":"obj_flipSpike","path":"objects/obj_flipSpike/obj_flipSpike.yy",},},
     {"id":{"name":"font_ibm_48","path":"fonts/font_ibm_48/font_ibm_48.yy",},},
