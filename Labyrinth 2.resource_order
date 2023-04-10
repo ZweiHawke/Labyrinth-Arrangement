@@ -22,6 +22,7 @@
     {"name":"Walls","order":8,"path":"folders/Sprites/Walls.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Indicators","order":14,"path":"folders/Sprites/Indicators.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_particle","order":5,"path":"sprites/spr_particle/spr_particle.yy",},
@@ -48,6 +49,7 @@
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"obj_flipWall","order":6,"path":"objects/obj_flipWall/obj_flipWall.yy",},
     {"name":"obj_spike","order":4,"path":"objects/obj_spike/obj_spike.yy",},
+    {"name":"spr_indicator","order":1,"path":"sprites/spr_indicator/spr_indicator.yy",},
     {"name":"font_ibm_24","order":1,"path":"fonts/font_ibm_24/font_ibm_24.yy",},
     {"name":"obj_pickup","order":3,"path":"objects/obj_pickup/obj_pickup.yy",},
     {"name":"spr_blank","order":2,"path":"sprites/spr_blank/spr_blank.yy",},
