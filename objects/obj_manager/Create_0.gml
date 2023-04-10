@@ -59,8 +59,9 @@ colorSet = [
 ];
 #endregion
 
-#region Particles
-
+#region Effects
+float = 1;
+floatSide = -1;
 #endregion
 
 #region	Level

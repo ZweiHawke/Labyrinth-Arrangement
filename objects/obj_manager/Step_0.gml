@@ -21,6 +21,13 @@ if (resetEnabled && !instance_exists(obj_player)) {
 	}
 }
 
+if (float >= 1) {
+	floatSide = -3;
+} else if (float <= -1) {
+	floatSide = 3;
+}
+float = lerp(float,floatSide,0.02*global.delta);
+
 #region Steps
 switch (obj_manager.currentStep) {
 	// Take Player Input

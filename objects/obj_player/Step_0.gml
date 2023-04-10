@@ -69,6 +69,12 @@ var _ud = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 			if (!wallCol) {
 				x += xPos;
 				y += yPos;
+				//part_system_depth(global.prt_System, 100);
+				part_particles_create(global.prt_System, x-(xPos*0.8), y-(yPos*0.8), prt_echo, 1);
+				part_particles_create(global.prt_System, x-(xPos*0.6), y-(yPos*0.6), prt_echo, 1);
+				part_particles_create(global.prt_System, x-(xPos*0.4), y-(yPos*0.4), prt_echo, 1);
+				part_particles_create(global.prt_System, x-(xPos*0.2), y-(yPos*0.2), prt_echo, 1);
+				part_particles_create(global.prt_System, x, y, prt_echo, 1);
 				//obj_manager.currentStep = turnStep.afterStep;
 			} else {
 				wallCol = false;	

@@ -61,6 +61,7 @@
     {"id":{"name":"font_ibm_48","path":"fonts/font_ibm_48/font_ibm_48.yy",},},
     {"id":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},},
     {"id":{"name":"prt_hazard","path":"particles/prt_hazard/prt_hazard.yy",},},
+    {"id":{"name":"prt_echo","path":"particles/prt_echo/prt_echo.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_flip","path":"objects/obj_flip/obj_flip.yy",},},
     {"id":{"name":"spr_computer","path":"sprites/spr_computer/spr_computer.yy",},},
