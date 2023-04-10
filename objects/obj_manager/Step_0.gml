@@ -8,6 +8,15 @@ if (prtUpdate >= 1) {
 	prtUpdate += 1*global.delta;
 }
 
+if (resetEnabled && !instance_exists(obj_player)) {
+	if (resetDelay >= 1) {
+		resetDelay = 0;
+		instance_create_layer(resetPoint[0],resetPoint[1],"Objects",obj_player);
+	} else {
+		resetDelay += 0.01*global.delta;	
+	}
+}
+
 #region Steps
 switch (obj_manager.currentStep) {
 	// Take Player Input

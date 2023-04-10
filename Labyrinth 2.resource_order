@@ -27,6 +27,7 @@
     {"name":"spr_particle","order":5,"path":"sprites/spr_particle/spr_particle.yy",},
     {"name":"spr_void","order":3,"path":"sprites/spr_void/spr_void.yy",},
     {"name":"spr_spike_outline","order":3,"path":"sprites/spr_spike_outline/spr_spike_outline.yy",},
+    {"name":"prt_player_hazard","order":3,"path":"particles/prt_player_hazard/prt_player_hazard.yy",},
     {"name":"spr_hazard","order":4,"path":"sprites/spr_hazard/spr_hazard.yy",},
     {"name":"spr_redo","order":2,"path":"sprites/spr_redo/spr_redo.yy",},
     {"name":"spr_key","order":1,"path":"sprites/spr_key/spr_key.yy",},
