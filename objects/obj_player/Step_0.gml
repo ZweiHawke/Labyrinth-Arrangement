@@ -36,8 +36,11 @@ var _ud = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 			
 		for (i = 0; i < array_length(spikes); i++) {
 			if(instance_place(x,y,spikes[i])) {
-				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 500);
-				instance_destroy(self);
+				var _obj = instance_place(x,y,spikes[i]);
+				if(_obj.state == true) {
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 500);
+					instance_destroy(self);
+				}
 			}
 		}
 		
