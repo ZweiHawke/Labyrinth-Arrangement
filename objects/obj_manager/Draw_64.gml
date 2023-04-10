@@ -30,7 +30,11 @@ if (debug_mode) {
 
 //Initialize Style Sheet
 draw_set_font(font_ibm_48);
+draw_set_halign(fa_left);
 draw_text_ext_transformed_color(16,window_get_height()-72-(32*0),levelName,0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_halign(fa_right);
+draw_text_ext_transformed_color(window_get_width()-16,window_get_height()-72-(32*0),string(pass),0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_halign(fa_left);
 draw_set_font(font_ibm_24);
 draw_text_ext_transformed_color(16,window_get_height()-64-(32*1),string(diamonds)+" / "+string(diamondsMax)+" Diamonds",0,320000,1,1,0,c_white,c_white,c_white,c_white,1);
 
