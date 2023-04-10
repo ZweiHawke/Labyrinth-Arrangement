@@ -33,6 +33,7 @@
     {"name":"spr_key","order":1,"path":"sprites/spr_key/spr_key.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"spr_spike","order":2,"path":"sprites/spr_spike/spr_spike.yy",},
+    {"name":"obj_diamond","order":7,"path":"objects/obj_diamond/obj_diamond.yy",},
     {"name":"spr_wall_outline","order":4,"path":"sprites/spr_wall_outline/spr_wall_outline.yy",},
     {"name":"prt_lock_open","order":2,"path":"particles/prt_lock_open/prt_lock_open.yy",},
     {"name":"obj_flipSpike","order":5,"path":"objects/obj_flipSpike/obj_flipSpike.yy",},

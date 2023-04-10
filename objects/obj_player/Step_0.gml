@@ -2,6 +2,7 @@
 
 var _lr = keyboard_check_pressed(vk_right)-keyboard_check_pressed(vk_left);
 var _ud = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
+var _pass = keyboard_check_pressed(vk_space);
 
 #region Process Turns
 	switch (obj_manager.currentStep) {
@@ -32,6 +33,8 @@ var _ud = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);
 				}
+			} else if (_pass) {
+				obj_manager.currentStep = turnStep.beforeStep;
 			}
 			
 		for (i = 0; i < array_length(spikes); i++) {
@@ -42,6 +45,12 @@ var _ud = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 					instance_destroy(self);
 				}
 			}
+		}
+		
+		if(instance_place(x,y,obj_pickup)) {
+			var _obj = instance_place(x,y,obj_pickup);
+			part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 500);
+			instance_destroy(_obj);
 		}
 		
 		}
