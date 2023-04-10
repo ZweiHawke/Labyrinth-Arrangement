@@ -9,8 +9,9 @@ part_system_automatic_update(global.prt_System, false);
 prtUpdate = 0;
 #endregion
 
-#region Pausing
+#region Pausing/Field Manip
 pause = false;
+indicate = true;
 #endregion
 
 #region Turn Steps

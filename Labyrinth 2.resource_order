@@ -42,6 +42,7 @@
     {"name":"obj_flipSpike","order":5,"path":"objects/obj_flipSpike/obj_flipSpike.yy",},
     {"name":"obj_boundary","order":2,"path":"objects/obj_boundary/obj_boundary.yy",},
     {"name":"prt_hazard","order":1,"path":"particles/prt_hazard/prt_hazard.yy",},
+    {"name":"spr_symbols","order":2,"path":"sprites/spr_symbols/spr_symbols.yy",},
     {"name":"prt_echo","order":4,"path":"particles/prt_echo/prt_echo.yy",},
     {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_flip","order":4,"path":"objects/obj_flip/obj_flip.yy",},

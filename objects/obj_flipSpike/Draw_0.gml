@@ -6,3 +6,6 @@ if (state) {
 }
 //draw_sprite(mask_index,0,x,y-32);
 
+if (obj_manager.indicate == true) {
+	draw_sprite(spr_indicator,0,x,y);
+}
