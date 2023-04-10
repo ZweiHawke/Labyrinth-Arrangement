@@ -61,6 +61,11 @@ var _pass = keyboard_check_pressed(vk_space);
 			_obj.collect = true;
 		}
 		
+		if(instance_place(x,y,obj_wall)) {
+			part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 500);
+			instance_destroy(self);
+		}
+		
 		}
 		break;
 		// Process Events Before the Players Input
