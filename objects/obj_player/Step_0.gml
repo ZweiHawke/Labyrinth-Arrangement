@@ -29,13 +29,13 @@ var _ud = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 					wallCol = false;
 					xPos = _lr*gridSize;
 					yPos = _ud*gridSize;
-					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player, 1);
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
 				}
 			}
 			
 		for (i = 0; i < array_length(spikes); i++) {
 			if(instance_place(x,y,spikes[i])) {
-				part_particles_create(global.prt_System, x+16, y+16, prt_player, 1);
+				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 500);
 			}
 		}
 		
