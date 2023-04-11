@@ -12,6 +12,12 @@ prtUpdate = 0;
 #region Pausing/Field Manip
 pause = false;
 indicate = true;
+enum pointDir {
+	right = 0,
+	up = 1,
+	left = 2,
+	down = 3
+}
 #endregion
 
 #region Turn Steps
