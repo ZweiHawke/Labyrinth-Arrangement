@@ -13,12 +13,19 @@ var _reset = keyboard_check_pressed(ord("R"));
 				for (i = 0; i < array_length(walls); i++) {
 					if (!wallCol) {
 						wallCol = place_meeting(x+(_lr*32),y+(_ud*32),walls[i]);
-						if(walls[i] == obj_flipWall) {
+						if(walls[i] == obj_flipWall || walls[i] == obj_lock) {
 							var _obj = instance_place(x+(_lr*32),y+(_ud*32),walls[i])
 							if(_obj) {
 								if(_obj.state == true) {
 									wallCol = false;
 								}
+							}
+							var _objK = instance_place(x+(_lr*32),y+(_ud*32),obj_lock)
+							if(_objK && obj_manager.keys[0]) {
+								_objK.state = true;
+								part_particles_create(global.prt_System, x+16+(_lr*32), y+16+(_ud*32), prt_lock_open, 500);
+								obj_manager.keys[0] -= 1;
+								obj_manager.usedKeys[0] += 1;
 							}
 						}
 					}
@@ -39,6 +46,8 @@ var _reset = keyboard_check_pressed(ord("R"));
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);	
 				} else {
+					xPos = 0;
+					yPos = 0;
 					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 50);
 					obj_manager.currentStep = turnStep.beforeStep;
 					obj_manager.pass -= 1;
@@ -86,8 +95,8 @@ var _reset = keyboard_check_pressed(ord("R"));
 			for (i = 0; i < array_length(walls); i++) {
 					if (!wallCol) {
 						wallCol = place_meeting(x+(_lr*32),y+(_ud*32),walls[i]);
-						if(walls[i] == obj_flipWall) {
-							var _obj = instance_place(x+(_lr*32),y+(_ud*32),walls[i])
+						if(walls[i] == obj_flipWall || walls[i] == obj_lock) {
+							var _obj = instance_place(x+(_lr*32),y+(_ud*32),walls[i]);
 							if(_obj) {
 								if(_obj.state == true) {
 									wallCol = false;

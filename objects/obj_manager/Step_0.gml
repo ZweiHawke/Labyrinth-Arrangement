@@ -1,6 +1,9 @@
 /// @description Game Management
 global.delta = delta_time/1000000*scale;
 
+var _indicate = keyboard_check(vk_shift);
+indicate = _indicate;
+
 if (prtUpdate >= 1) {
 	part_system_update(global.prt_System);
 	prtUpdate = 0;
@@ -19,6 +22,11 @@ if (resetEnabled && !instance_exists(obj_player)) {
 		with(obj_pickup) {
 			reset = true;
 		}
+		with(obj_lock) {
+			state = false;
+		}
+		keys[0] += usedKeys[0];
+		usedKeys[0] = 0;
 		instance_create_layer(resetPoint[0],resetPoint[1],"Objects",obj_player);
 	} else {
 		resetDelay += 0.01*global.delta;	
