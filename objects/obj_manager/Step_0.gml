@@ -16,7 +16,7 @@ if (resetEnabled && !instance_exists(obj_player)) {
 		resetDelay = 0;
 		pass = passStart;
 		with(obj_flip) {
-			state = defState
+			state = defState;
 			part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 5);
 		}
 		with(obj_pickup) {

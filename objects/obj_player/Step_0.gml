@@ -21,11 +21,13 @@ var _reset = keyboard_check_pressed(ord("R"));
 								}
 							}
 							var _objK = instance_place(x+(_lr*32),y+(_ud*32),obj_lock)
-							if(_objK && obj_manager.keys[0]) {
-								_objK.state = true;
-								part_particles_create(global.prt_System, x+16+(_lr*32), y+16+(_ud*32), prt_lock_open, 500);
-								obj_manager.keys[0] -= 1;
-								obj_manager.usedKeys[0] += 1;
+							if(_objK) {
+								if (obj_manager.keys[0] && !_objK.state) {
+									_objK.state = true;
+									part_particles_create(global.prt_System, x+16+(_lr*32), y+16+(_ud*32), prt_lock_open, 500);
+									obj_manager.keys[0] -= 1;
+									obj_manager.usedKeys[0] += 1;
+								}
 							}
 						}
 					}
