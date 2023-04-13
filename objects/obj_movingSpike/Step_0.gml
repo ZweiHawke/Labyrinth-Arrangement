@@ -2,6 +2,32 @@
 switch (obj_manager.currentStep) {
 	// Take Player Input
 	case turnStep.playerTurn: {
+		switch (dir) {
+			case pointDir.left: {
+				if (instance_position(x-32,y,obj_wall)) {
+					dir = pointDir.right;
+				}
+			}
+			break;
+			case pointDir.up: {
+				if (instance_position(x,y-32,obj_wall)) {
+					dir = pointDir.down;
+				}
+			}
+			break;
+			case pointDir.right: {
+				if (instance_position(x+32,y,obj_wall)) {
+					dir = pointDir.left;
+				}
+			}
+			break;
+			case pointDir.down: {
+				if (instance_position(x,y+32,obj_wall)) {
+					dir = pointDir.up;
+				}
+			}
+			break;
+		}
 		cleanup = false;
 	}
 	break;
@@ -17,7 +43,7 @@ switch (obj_manager.currentStep) {
 	case turnStep.afterStep: {
 		switch (dir) {
 			case pointDir.left: {
-				x += 1*gridSize;
+				x -= 1*gridSize;
 			}
 			break;
 			case pointDir.up: {
@@ -25,7 +51,7 @@ switch (obj_manager.currentStep) {
 			}
 			break;
 			case pointDir.right: {
-				x -= 1*gridSize;
+				x += 1*gridSize;
 			}
 			break;
 			case pointDir.down: {

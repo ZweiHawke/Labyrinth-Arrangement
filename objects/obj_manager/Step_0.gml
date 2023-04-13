@@ -25,6 +25,12 @@ if (resetEnabled && !instance_exists(obj_player)) {
 		with(obj_lock) {
 			state = false;
 		}
+		with(obj_movingSpike) {
+			dir = defDir;
+			x = spawnPoint[0];
+			y = spawnPoint[1];
+			part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 5);
+		}
 		keys[0] += usedKeys[0];
 		usedKeys[0] = 0;
 		instance_create_layer(resetPoint[0],resetPoint[1],"Objects",obj_player);

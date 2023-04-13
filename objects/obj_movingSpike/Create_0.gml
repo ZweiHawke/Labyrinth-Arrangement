@@ -1,6 +1,7 @@
 /// @description Init Var
-defDir = pointDir.left;
+defDir = pointDir.right;
 dir = defDir;
-spawnPoint [x,y];
+spawnPoint = [x,y];
+state = true;
 color = obj_manager.colorSet[4];
 cleanup = false;
