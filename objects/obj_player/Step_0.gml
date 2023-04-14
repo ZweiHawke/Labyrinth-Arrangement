@@ -58,7 +58,6 @@ var _reset = keyboard_check_pressed(ord("R"));
 				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
 				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);	
 			} else if (_reset) {
-				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 500);
 				instance_destroy(self);
 			}
 			
@@ -66,11 +65,48 @@ var _reset = keyboard_check_pressed(ord("R"));
 			if(instance_place(x,y,spikes[i])) {
 				var _obj = instance_place(x,y,spikes[i]);
 				if(_obj.state == true) {
-					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 500);
 					instance_destroy(self);
 				}
 			}
 		}
+		
+		if (instance_place(x+xPos,y+yPos,obj_movingSpike)) {
+				var _obj = instance_place(x+xPos,y+yPos,obj_movingSpike);
+				switch (_obj.dir) {
+					case pointDir.left: {
+						if(xPos > 0) {
+							xPos = 0;
+							yPos = 0;
+							instance_destroy(self);
+						}
+					}
+					break;
+					case pointDir.up: {
+						if(yPos > 0) {
+							xPos = 0;
+							yPos = 0;
+							instance_destroy(self);
+						}
+					}
+					break;
+					case pointDir.right: {
+						if(xPos < 0) {
+							xPos = 0;
+							yPos = 0;
+							instance_destroy(self);
+						}
+					}
+					break;
+					case pointDir.down: {
+						if(yPos < 0) {
+							xPos = 0;
+							yPos = 0;
+							instance_destroy(self);
+						}
+					}
+					break;
+				}
+			}
 		
 		if(instance_place(x,y,obj_pickup)) {
 			var _obj = instance_place(x,y,obj_pickup);
