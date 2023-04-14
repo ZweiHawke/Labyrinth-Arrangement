@@ -47,7 +47,7 @@ switch (obj_manager.currentStep) {
 			}
 			break;
 			case pointDir.up: {
-				x -= 1*gridSize;
+				y -= 1*gridSize;
 			}
 			break;
 			case pointDir.right: {
@@ -55,7 +55,7 @@ switch (obj_manager.currentStep) {
 			}
 			break;
 			case pointDir.down: {
-				x += 1*gridSize;
+				y += 1*gridSize;
 			}
 			break;
 		}
