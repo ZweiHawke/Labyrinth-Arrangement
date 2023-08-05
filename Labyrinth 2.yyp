@@ -39,9 +39,10 @@
   "isEcma": false,
   "LibraryEmitters": [
     {"name":"Lab_Hazard","path":"particlelib/Lab_Hazard/Lab_Hazard.yy",},
+    {"name":"Lab_Hazard","path":"particlelib/Lab_Hazard/Lab_Hazard.yy",},
   ],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
