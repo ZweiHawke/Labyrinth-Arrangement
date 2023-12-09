@@ -5,6 +5,7 @@ var _ud = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 var _pass = keyboard_check_pressed(vk_space);
 var _reset = keyboard_check_pressed(ord("R"));
 
+
 #region Process Turns
 	switch (obj_manager.currentStep) {
 		// Take Player Input
@@ -24,7 +25,7 @@ var _reset = keyboard_check_pressed(ord("R"));
 							if(_objK) {
 								if (obj_manager.keys[0] && !_objK.state) {
 									_objK.state = true;
-									part_particles_create(global.prt_System, x+16+(_lr*32), y+16+(_ud*32), prt_lock_open, 500);
+									part_particles_create(global.prt_System, x+16+(_lr*32), y+16+(_ud*32), p_lock_open, 500);
 									obj_manager.keys[0] -= 1;
 									obj_manager.usedKeys[0] += 1;
 								}
@@ -40,23 +41,23 @@ var _reset = keyboard_check_pressed(ord("R"));
 					wallCol = false;
 					xPos = _lr*gridSize;
 					yPos = _ud*gridSize;
-					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
-					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, p_hazard, 1);
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, p_hazard_dots, 50);
 				}
 			} else if (_pass && obj_manager.pass > 0) {
 				if (instance_place(x,y,obj_flipWall)) {
-					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
-					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);	
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, p_hazard, 1);
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, p_hazard_dots, 50);	
 				} else {
 					xPos = 0;
 					yPos = 0;
-					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 50);
+					part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, p_death, 50);
 					obj_manager.currentStep = turnStep.beforeStep;
 					obj_manager.pass -= 1;
 				}
 			} else if (_pass) {
-				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_hazard, 1);
-				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_hazard, 50);	
+				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, p_hazard, 1);
+				part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, p_hazard_dots, 50);	
 			} else if (_reset) {
 				instance_destroy(self);
 			}
@@ -111,13 +112,13 @@ var _reset = keyboard_check_pressed(ord("R"));
 		if(instance_place(x,y,obj_pickup)) {
 			var _obj = instance_place(x,y,obj_pickup);
 			if (!_obj.collect) {
-				part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 500);
+				part_particles_create(global.prt_System, x+16, y+16, p_hazard_dots, 500);
 			}
 			_obj.collect = true;
 		}
 		
 		if(instance_place(x,y,obj_wall)) {
-			part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, prt_player_death, 500);
+			part_particles_create(global.prt_System, x+16+xPos, y+16+yPos, p_death, 500);
 			instance_destroy(self);
 		}
 		
@@ -147,11 +148,11 @@ var _reset = keyboard_check_pressed(ord("R"));
 				x += xPos;
 				y += yPos;
 				//part_system_depth(global.prt_System, 100);
-				part_particles_create(global.prt_System, x-(xPos*0.8), y-(yPos*0.8), prt_echo, 1);
-				part_particles_create(global.prt_System, x-(xPos*0.6), y-(yPos*0.6), prt_echo, 1);
-				part_particles_create(global.prt_System, x-(xPos*0.4), y-(yPos*0.4), prt_echo, 1);
-				part_particles_create(global.prt_System, x-(xPos*0.2), y-(yPos*0.2), prt_echo, 1);
-				part_particles_create(global.prt_System, x, y, prt_echo, 1);
+				part_particles_create(global.prt_System, x-(xPos*0.8), y-(yPos*0.8), p_echo, 1);
+				part_particles_create(global.prt_System, x-(xPos*0.6), y-(yPos*0.6), p_echo, 1);
+				part_particles_create(global.prt_System, x-(xPos*0.4), y-(yPos*0.4), p_echo, 1);
+				part_particles_create(global.prt_System, x-(xPos*0.2), y-(yPos*0.2), p_echo, 1);
+				part_particles_create(global.prt_System, x, y, p_echo, 1);
 				//obj_manager.currentStep = turnStep.afterStep;
 			} else {
 				wallCol = false;	

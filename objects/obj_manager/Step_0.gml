@@ -17,7 +17,7 @@ if (resetEnabled && !instance_exists(obj_player)) {
 		pass = passStart;
 		with(obj_flip) {
 			state = defState;
-			part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 5);
+			part_particles_create(global.prt_System, x+16, y+16, p_hazard_dots, 5);
 		}
 		with(obj_pickup) {
 			reset = true;
@@ -29,7 +29,7 @@ if (resetEnabled && !instance_exists(obj_player)) {
 			dir = defDir;
 			x = spawnPoint[0];
 			y = spawnPoint[1];
-			part_particles_create(global.prt_System, x+16, y+16, prt_player_hazard, 5);
+			part_particles_create(global.prt_System, x+16, y+16, p_hazard_dots, 5);
 		}
 		keys[0] += usedKeys[0];
 		usedKeys[0] = 0;

@@ -84,3 +84,4 @@ resetDelay = 0;
 resetPoint = [0,0]
 #endregion
 
+scr_p_init();

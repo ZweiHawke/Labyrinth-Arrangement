@@ -40,9 +40,12 @@
   "LibraryEmitters": [
     {"name":"Lab_Hazard","path":"particlelib/Lab_Hazard/Lab_Hazard.yy",},
     {"name":"Lab_Hazard","path":"particlelib/Lab_Hazard/Lab_Hazard.yy",},
+    {"name":"Lab_Hazard","path":"particlelib/Lab_Hazard/Lab_Hazard.yy",},
+    {"name":"Lab_Hazard","path":"particlelib/Lab_Hazard/Lab_Hazard.yy",},
+    {"name":"Lab_Hazard","path":"particlelib/Lab_Hazard/Lab_Hazard.yy",},
   ],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
@@ -83,6 +86,7 @@
     {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},},
     {"id":{"name":"spr_indicator","path":"sprites/spr_indicator/spr_indicator.yy",},},
     {"id":{"name":"spr_switch","path":"sprites/spr_switch/spr_switch.yy",},},
+    {"id":{"name":"scr_p_init","path":"scripts/scr_p_init/scr_p_init.yy",},},
     {"id":{"name":"font_ibm_24","path":"fonts/font_ibm_24/font_ibm_24.yy",},},
     {"id":{"name":"obj_pickup","path":"objects/obj_pickup/obj_pickup.yy",},},
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},},
@@ -94,6 +98,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"room_gym","path":"rooms/room_gym/room_gym.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

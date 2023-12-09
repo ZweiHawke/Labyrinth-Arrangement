@@ -11,3 +11,5 @@ spikes = [obj_spike,obj_flipSpike];
 spikeCol = false;
 obj_manager.resetPoint = [x,y];
 #endregion
+
+scr_p_init();

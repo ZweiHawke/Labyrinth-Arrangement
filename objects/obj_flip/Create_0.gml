@@ -6,3 +6,5 @@ cool = 1;
 cooldowns = [1,1];
 cleanup = false;
 obj_manager.beforeActions += 1;
+
+scr_p_init();
